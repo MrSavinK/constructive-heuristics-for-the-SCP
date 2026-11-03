@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\caption{Constructive heuristics (Assignment 1, 42 instances, seed 1). Deviation from $f^*$ before and after RE; RE gain = cost reduction by RE (in brackets: mean $\pm$ std over 10 seeds); \# helped = instances where RE removed at least one set.}
+\label{tab:construct}
+\begin{tabular}{llrrrrr}
+\toprule
+ & selection rule & dev [\%] & dev + RE [\%] & RE gain [\%] & \# helped & sets removed \\
+\midrule
+CH1 & random el. / set & 2,297.07 & 1,755.70 & 23.06 (23.02$\pm$0.86) & 42 & 16.6 \\
+CH2 & random el., best ratio & 19.45 & 14.99 & 3.71 (3.69$\pm$0.44) & 40 & 4.0 \\
+CH3 & best ratio, all sets & 13.05 & 6.49 & 5.78 (6.08$\pm$0.31) & 42 & 7.8 \\
+\bottomrule
+\end{tabular}
+\end{table}

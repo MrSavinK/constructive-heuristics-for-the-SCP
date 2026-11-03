@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering\small
+\caption{Iterative improvement (Assignment 2, 42 instances). Final deviation: mean $\pm$ std over 5 seeds of the per-seed averages; steps and evaluated neighbours per run (seed 1); time = total local-search time over the 42 instances.}
+\label{tab:ls}
+\begin{tabular}{llrrrrr}
+\toprule
+start & pivot & dev start [\%] & dev final [\%] & steps & evaluations & time [s] \\
+\midrule
+CH1 & FI & 2,297 & 3.84 $\pm$ 0.23 & 56.2 & 294 & 3.0 \\
+CH1 & BI & 2,297 & 4.00 $\pm$ 0.61 & 32.8 & 2,147 & 23.8 \\
+CH2 & FI & 19.45 & 3.84 $\pm$ 0.40 & 9.6 & 169 & 1.8 \\
+CH2 & BI & 19.45 & 3.65 $\pm$ 0.39 & 5.7 & 415 & 4.6 \\
+CH3 & FI & 13.05 & 2.83 $\pm$ 0.21 & 5.5 & 134 & 1.4 \\
+CH3 & BI & 13.05 & \textbf{2.51} $\pm$ 0.29 & 3.3 & 286 & 3.0 \\
+CH1+RE & FI & 1,756 & 4.01 $\pm$ 0.44 & 54.0 & 298 & 3.2 \\
+CH1+RE & BI & 1,756 & 3.86 $\pm$ 0.33 & 32.4 & 2,101 & 23.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
