@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Experiment B: the promising changes of Experiment A added one at a time ($C_k = C_{k-1}$ + one change), new seeds 106--110 on the 14 tuning instances, equal CPU time. Better:worse = instances where the configuration has a lower\,/\,higher mean than the reference; Holm-corrected Wilcoxon $p$; generations and final diversity (mean Jaccard distance) per run.}
+\label{tab:stageB}
+\begin{tabular}{llllrrrrr}
+\toprule
+budget & config. & change & dev [\%] & diff [pp] & better:worse & Holm $p$ & gen. & div. \\
+\midrule
+\multirow{3}{*}{1$\times$ TS} & reference & stage-A config.\ (= baseline) & 1.07 &  &  &  & 19 & 0.16 \\
+ & C1 & + ls\_prob $=$ 0.2 & 1.03 & $-0.04$ & 4:6 & 0.878 & 3 & 0.26 \\
+ & C2 & + elite $=$ 5 & 0.88 & $-0.19$ & 6:4 & 0.569 & 3 & 0.25 \\
+\midrule
+\multirow{5}{*}{3$\times$ TS} & reference & stage-A config.\ (= baseline) & 0.63 &  &  &  & 97 & 0.15 \\
+ & C1 & + ls\_prob $=$ 0.2 & 0.51 & $-0.12$ & 6:4 & 0.641 & 13 & 0.18 \\
+ & C2 & + restart\_after $=$ 10 & 0.49 & $-0.14$ & 6:3 & 0.641 & 13 & 0.20 \\
+ & C3 & + pop\_size $=$ 50 & 0.50 & $-0.13$ & 6:4 & 0.641 & 7 & 0.24 \\
+ & C4 & + rcl\_repair $=$ 2 & 0.45 & $-0.18$ & 7:3 & 0.558 & 6 & 0.25 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Experiment A: average deviation [\%] of every level at equal CPU time (14 tuning instances $\times$ 5 seeds). Underlined: baseline level; bold: best level; $^{*}$/$^{\times}$: significantly better/worse than the baseline (Wilcoxon on instance means, Holm-corrected within the factor, $p<0.05$).}
+\label{tab:tuning}
+\begin{tabular}{lllll}
+\toprule
+factor & levels & 1$\times$ TS time & 3$\times$ TS time \\
+\midrule
+population size $N$ & 10 / 20 / 30 / 50 / 100 & 1.52 / \textbf{1.02} / \underline{1.07} / 1.90$^{\times}$ / 2.88$^{\times}$ & 1.36$^{\times}$ / 0.78 / \underline{0.72} / \textbf{0.59} / 0.77 \\
+mutation prob.\ $p_m$ & 0.0 / 0.1 / 0.2 / 0.4 & 1.08 / 1.11 / \underline{\textbf{1.07}} / 1.09 & 0.70 / 0.70 / \underline{0.72} / \textbf{0.68} \\
+crossover prob.\ $p_c$ & 0.5 / 0.7 / 0.9 / 1.0 & \textbf{1.02} / 1.10 / \underline{1.07} / 1.05 & \textbf{0.67} / 0.71 / \underline{0.72} / 0.68 \\
+elite size & 0 / 1 / 2 / 5 & 1.38 / 1.18 / \underline{1.07} / \textbf{0.96} & 0.82 / \textbf{0.71} / \underline{0.72} / 0.72 \\
+tournament size $k$ & 2 / 3 / 5 & \underline{1.07} / \textbf{0.94} / 1.02 & \underline{0.72} / \textbf{0.64} / 0.77 \\
+initial RCL size & 2 / 3 / 5 / 10 & 1.54 / 1.50 / \underline{1.07} / \textbf{1.00} & 0.89 / 0.87 / \underline{\textbf{0.72}} / 0.72 \\
+repair RCL size & 1 / 2 / 3 & \underline{\textbf{1.07}} / 1.15 / 1.26 & \underline{0.72} / \textbf{0.60} / 0.69 \\
+restart after (gen.) & off / 10 / 20 & \underline{1.07} / \textbf{1.06} / 1.13 & \underline{0.72} / \textbf{0.52} / 0.56 \\
+local-search prob. & 0.0 / 0.05 / 0.2 & \underline{1.07} / 0.96 / \textbf{0.95} & \underline{0.72} / 0.59 / \textbf{0.48} \\
+\bottomrule
+\end{tabular}
+\end{table}
